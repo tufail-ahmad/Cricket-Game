@@ -1,0 +1,96 @@
+/*====================== Global Styles ==============================*/
+:root {
+  font-size: 62.5%;
+}
+
+/*========================= Toggle Button Styles ========================*/
+.mode-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  box-shadow: 1px 1px 2px var(--box-shadow-color),
+    -1px -1px 2px var(--box-shadow2-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mode-btn svg:last-child {
+  display: block;
+  fill: rgb(52, 52, 54);
+}
+
+.mode-btn svg:first-child {
+  display: none;
+}
+
+/*========================== Light Mode Styles =====================*/
+body.light-mode {
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  transition: all 0.5s ease-in;
+  margin: 10px;
+  text-align: center;
+  --box-shadow-color: rgba(114, 27, 5, 0.4);
+  --box-shadow2-color: rgba(245, 245, 245, 0.9);
+  --reset-bg-color: cornflowerblue;
+  --heading-color: rgba(3, 19, 250, 0.801);
+  --reset-color: rgb(68, 64, 65);
+}
+
+/*=========================== Dark Mode Styes ===================*/
+body.dark-mode {
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(to right, #928dab, #1f1c2c);
+  --box-shadow-color: rgba(52, 204, 255, 0.4);
+  --box-shadow2-color: rgba(245, 245, 245, 0.9);
+  --reset-bg-color: #1f1c2c;
+  --heading-color: rgb(248, 184, 6);
+  --reset-color: rgba(255, 255, 255, 0.534);
+}
+
+/*========================== Main Styles ========================*/
+#main-heading {
+  color: var(--heading-color);
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.heading {
+  color: var(--heading-color);
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.btn {
+  background: transparent;
+  box-shadow: 1px 1px 2px var(--box-shadow-color),
+    -1px -1px 2px var(--box-shadow2-color);
+  border: none;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  margin: 5px;
+}
+
+.images {
+  width: 100px;
+  height: 100px;
+}
+
+#reset-score {
+  background-color: var(--reset-bg-color);
+  border: none;
+  box-shadow: 1px 1px 2px var(--box-shadow-color),
+    -1px -1px 2px var(--box-shadow2-color);
+  border-radius: 50%;
+  padding: 5px;
+  height: 45px;
+  width: 45px;
+}
+
+#reset-score span {
+  color: var(--reset-color);
+}
