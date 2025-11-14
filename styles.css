@@ -1,4 +1,9 @@
 /*====================== Global Styles ==============================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 :root {
   font-size: 62.5%;
 }
